@@ -1,0 +1,2754 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: 'Moontime';
+    src: url(assets/fuentes/FontsFree-Net-MoonTime-Regular-1.ttf);
+}
+
+@font-face{
+font-family: 'Garbata';
+    src: url(assets/fuentes/GarbataTrial-Regular.ttf);
+}
+@font-face{
+    font-family: 'Lato';
+        src: url(assets/fuentes/Lato-Heavy.ttf);
+    }
+
+header{    
+    text-align: center;
+    padding: 0% 5% ;
+    height: auto;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    padding: 0.5rem 0;
+    margin: 0 auto;
+    background: rgb(250,237,232);
+background: linear-gradient(90deg, rgba(250, 237, 232, 0.219) 0%, rgba(172, 169, 169, 0.137) 47%, rgba(248, 243, 241, 0.144) 100%);
+
+}
+
+body{
+    margin: 0 auto;
+    background: rgb(250,237,232);
+background: linear-gradient(90deg, rgba(173, 238, 212, 0.212) 0%, rgba(250, 237, 232, 0.808) 49%, rgba(219, 212, 212, 0.362) 100%);
+background-color: rgba(158, 228, 200, 0.911);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+}
+ul{
+    text-align: center;
+}
+li{
+    list-style-type: none;
+}
+
+p{
+    font-size: clamp(1rem, -0.1486rem + 1.4136vw, 4.375rem);
+}
+
+.firma{
+    font-family: 'Moontime';
+    font-size: clamp(3.5rem, 0.4372rem + 3.7696vw, 12.5rem);   
+    font-weight: 600;
+    padding-top: 1rem;
+    
+}
+
+.firma1{
+    font-family: 'Moontime';
+    font-size: clamp(3.75rem, -0.0773rem + 4.6392vw, 15rem);
+    text-align: left;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    
+}
+
+.cont{
+    
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3vh;
+    height: auto;
+}
+
+.contIndex{
+    
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    
+}
+
+.contClase{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3%;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+
+}
+.contCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    gap: 0.5rem;
+
+}
+
+.tarj{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.3rem ;
+    text-align: center;
+    padding: 2% ;
+    border: solid 0.3rem rgba(104, 95, 95, 0.349);
+    border-radius: 0.5rem;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.19931722689075626) 0%, rgba(250,237,232,0.022846638655462215) 100%);
+    background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover ;
+    box-shadow: 0px 0px 33px 14px rgba(237,154,154,0.28);
+}
+
+.img1{
+    width: 35%;
+    height: auto;
+    
+}
+
+.central{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    gap: 1rem;
+    width: 30%;
+   padding-top: 2rem;
+   
+    
+}
+
+.img2{
+    width: 70%;
+    margin:  0 auto;
+    
+}
+
+.btn1{
+    text-align: center;
+    color: black;
+    width: fit-content;
+    font-weight: bold;
+    border-radius: 5%;
+    text-decoration: none;
+    margin: 0 auto;
+    font-family: 'Moontime';
+    font-size: clamp(3.75rem, -0.2899rem + 4.8969vw, 15.625rem);
+    padding: 0 5%;
+    /* border: solid 5px black; */
+    
+}
+
+.btn1:hover{
+    text-shadow: 0 0 10px rgba(253, 249, 249, 0.966), 0 0 5px rgba(255, 255, 255, 0.671);
+    background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+background-size:cover ;
+}
+
+.btnFirma:hover{
+    text-shadow: 0 0 10px rgba(253, 249, 249, 0.966), 0 0 5px rgba(255, 255, 255, 0.671);
+    background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover ;
+
+}
+
+.botonera{
+    width: 70%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+
+.botoneraContacto{
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin: 0 auto;
+    padding: 2% 0;
+}
+
+.btn{
+    color: rgba(0,0,0);
+    /* background: #6e6e6e; */
+    width: fit-content;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-family: 'Garbata';
+    font-size: clamp(0.875rem, -2.1111rem + 2.2222vw, 5rem);
+    box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+    margin: 0 auto;
+}
+
+.btn:hover{
+    width: fit-content;
+    /* background: #6e6e6e; */
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-family: 'Garbata';
+    font-size: clamp(0.875rem, -2.1111rem + 2.2222vw, 5rem);
+    box-shadow:inset -1px 0px 19px 2px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#5e4343dc;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+
+/* SECCIONES  */
+
+.leftCont{
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: auto;
+
+}
+.cen{
+    justify-content: center;
+    }
+
+.even{
+    justify-content: space-evenly;
+}
+
+.rightCont{
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+background-size:cover ;
+padding: 2%;
+}
+
+.rightCont.songs{
+    border: solid 0.3rem rgba(104, 95, 95, 0.349);
+    border-radius: 0.5rem;
+    
+}
+
+.rightCont.sobreMi{
+    align-items:center;
+    background: linear-gradient(90deg,  rgba(250,237,232,0.022846638655462215)  0%, rgba(126, 125, 125, 0.199) 100%);
+    padding: 2%;
+    background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover;
+    height: auto;
+}
+
+.rightCont.contact{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+    }
+.leftCont.sobreMi{
+    justify-content: space-around;
+    gap: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.19931722689075626) 0%, rgba(250,237,232,0.022846638655462215) 100%);
+    padding: 2%;
+    background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover;
+    height: auto;
+    }
+    .leftCont.songs{
+        justify-content:center;
+        background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.19931722689075626) 0%, rgba(250,237,232,0.022846638655462215) 100%);
+        padding: 2%;
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+background-size:cover ;
+border: solid 0.3rem rgba(104, 95, 95, 0.349);
+    border-radius: 0.5rem;
+        }
+.leftCont.contact{
+    height: 100%;
+    }
+
+
+.ap{
+    width: 70%;
+    animation-name: aparicion;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg,  rgba(250,237,232,0.022846638655462215)  100%,rgba(0,0,0,0.19931722689075626) 0%);
+    border-radius: 1rem;
+    
+}
+
+.imgCoro{
+    width: 60%;
+    margin: 0 auto;
+    animation-name: aparicion;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Garbata';
+    font-size: clamp(2rem, 0.1603rem + 1.6796vw, 8.375rem);
+    font-weight: bolder;
+    width: 100%;
+
+}
+.titleContacto{
+    text-align: center;
+    font-family: 'Garbata';
+    font-size: clamp(1.5625rem, 0.3958rem + 1.9444vw, 2rem);
+    font-weight: bolder;
+    width: 100%;
+    padding: 1rem;
+}
+.subtitle{
+    text-align: center;
+    font-family: 'Garbata';
+    font-size: clamp(1.5rem, 0.1603rem + 1.8796vw, 5.375rem);
+    font-weight: bolder;
+    width: 100%;
+
+}
+
+.text{
+    font-size: clamp(0.9375rem, -0.0193rem + 1.1598vw, 3.75rem);
+    font-family: 'Garbata';
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    width: 100%;
+    text-align: left;
+    line-height: 120%;
+    padding-top: 2%;
+    
+    
+}
+
+.text1{
+    font-size: clamp(1rem, -0.1486rem + 1.4136vw, 4.375rem);
+    font-family: 'Lato';
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    width: 100%;
+    text-align: center;
+    padding: 3%;
+}
+
+.text1.song{
+    font-size: clamp(1rem, -0.1486rem + 1.4136vw, 3rem);
+    background-color: #c1ecdbbb;
+    width: fit-content;
+    margin: 2% auto;
+    border-radius: 5%;
+    padding: 0;
+}
+
+.textTarj{
+    font-size: clamp(1rem, -0.1486rem + 1.4136vw, 4.375rem);
+    font-family: 'Lato';
+    letter-spacing: 0.1rem;
+    width: 100%;
+    text-align: center;
+}
+
+h1.textTarj{
+    font-size: clamp(1rem, -0.1486rem + 1.4136vw, 4.375rem);
+    font-family: 'Lato';
+    letter-spacing: 0.1rem;
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+}
+
+.title.song{
+    background-color: #c1ecdbbb;
+    margin: 0 auto;
+    width: fit-content;
+    border-radius: 5%;
+    padding: 3% 2% 1% 1%;
+}
+.title.songs{
+    background-color: #c1ecdbbb;
+    margin: 0 auto;
+    width: fit-content;
+    border-radius: 5%;
+    padding: 2% 1% 1%;
+}
+
+.img4{
+    width: 75%;
+    animation-name: aparicion;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    border-radius: 3%;
+    display: none;
+    
+}
+
+.img5{
+    width: 70%;
+    animation-name: aparicion;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    border-radius: 3%;
+    margin-bottom: 0rem;
+    
+}
+
+.img6{
+    display: none;
+}
+
+
+.imgContacto{
+    width: 70%;
+    animation-name: aparicion;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    margin: 0 auto;
+}
+
+.contSong{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    
+}
+.half{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.v-line{
+    border-left:dashed thick  #000000a2;
+    height: 50%;
+    margin: auto 0;
+   }
+
+.estilos{
+    font-family: 'Lato';
+    font-size: clamp(1rem, 0.2317rem + 1vw, 3.50rem);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 2%;
+    border-radius: 0.5rem;
+    text-shadow: 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.397);
+    
+}
+
+.estilos:hover{
+    background-color: #c1ecdbbb;
+}
+
+.estilos.canc{
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 600;
+    font-size: clamp(1rem, 0.2317rem + 1vw, 3.50rem);
+}
+.estilos.canc:hover{
+    background-color: rgba(193, 236, 219, 0.733);
+}
+
+.clase{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%,  rgba(243, 187, 187, 0.397) 0%);
+border-radius: 1rem;
+border: solid 0.3rem rgba(104, 95, 95, 0.349);
+    width: 45%;
+    justify-content: space-between;
+    padding: 3% 0;
+    height: auto;
+    background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+background-size:cover ;
+
+}
+.rightCont.clase{
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(243, 187, 187, 0.397) 100%, rgb(255, 255, 255) 0%);
+background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+background-size:cover ;
+}
+
+.icon{
+    width: 100%;
+    height: 5vw;
+}
+
+.cont2{
+    width: 100%;
+    text-align: center;
+}
+
+.video{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: start;
+    background-color: #ba9f98;
+    height: 80vh;
+    width: 80%;
+    left:10%;
+    top: 10%;
+    padding: 0 1% 3%;
+    animation-name: aparicion;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.videoA{
+    width: 5%;
+}
+.close{
+    width: 100%;
+    
+}
+
+.bn54 {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: fit-content;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 0.1rem solid rgba(0, 0, 0, 0.6);
+    background-image: url(assets/imagenes/stacked-peaks-haikei_3.png);
+    background-size:cover;
+    transition: 0.5s;
+    font-family: 'Lato';
+    font-size: clamp(1.125rem, -0.4059rem + 1.8557vw, 5.625rem);
+    padding: 1% 2%;
+    margin: 0 auto;
+  }
+  
+  .bn54Cont{
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 0.1rem solid rgba(255, 191, 119, 0.425);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: fit-content;
+    opacity: 1;
+    transition: 0.5s;
+    font-family: 'Lato';
+    font-size: clamp(1rem, 0.1372rem + 1vw, 8.5rem);
+    padding: 1% 2%;
+    
+  }
+
+  
+  .bn54 .bn54span {
+    color: #000000;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+  }
+  
+  .bn54:hover {
+    animation: bn54rotate 0.7s ease-in-out both;
+    background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover ;
+    
+  }
+  .bn54Cont:hover {
+    animation: bn54rotateCont 0.7s ease-in-out both;
+    background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover ;
+    border-radius: 0;
+    border: 0.1rem solid rgba(0, 0, 0, 0.445);
+  }
+  
+  .bn54:hover .bn54span {
+    animation: bn54storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+
+  .cel{
+    display: none;
+  }
+
+  .non{
+    display: none;
+  }
+  
+  @keyframes bn54rotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes bn54rotateCont {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(8deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-8deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(2deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes bn54storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    50% {
+      transform: translate3d(0px, 0, 0) translateZ(0);
+    }
+    75% {
+      transform: translate3d(0px, 0, 0) translateZ(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }
+
+@keyframes aparicion{
+    0%{
+        opacity: 0.5;
+        transform: scale(0.95);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media handheld, screen and (min-width:960px) and (max-width: 1320px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    @font-face {
+        font-family: 'Moontime';
+        src: url(assets/fuentes/FontsFree-Net-MoonTime-Regular-1.ttf);
+    }
+    
+    @font-face{
+    font-family: 'Garbata';
+        src: url(assets/fuentes/GarbataTrial-Regular.ttf);
+    }
+    @font-face{
+        font-family: 'Lato';
+            src: url(assets/fuentes/Lato-Heavy.ttf);
+        }
+    
+    header{    
+        text-align: center;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        padding: 3%;
+        margin: 0 auto;
+        background: rgb(250,237,232);
+    background: linear-gradient(90deg, rgba(250, 237, 232, 0.219) 0%, rgba(172, 169, 169, 0.137) 47%, rgba(248, 243, 241, 0.144) 100%);
+    
+    }
+    
+    body{
+        margin: 0 auto;
+        background: rgb(250,237,232);
+    background: linear-gradient(90deg, rgba(173, 238, 212, 0.212) 0%, rgba(250, 237, 232, 0.808) 49%, rgba(219, 212, 212, 0.362) 100%);
+    background-color: rgba(158, 228, 200, 0.911);
+    max-height: 700px;
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+    ul{
+        text-align: center;
+    }
+    li{
+        list-style-type: none;
+    }
+    
+    p{
+        font-size: clamp(1rem, -0.1486rem + 1.4136vw, 4.375rem);
+    }
+    
+    .firma{
+        font-family: 'Moontime';
+        font-size: clamp(3.5rem, 1.1667rem + 3.8889vw, 4.375rem);  
+        font-weight: 600;
+        padding-top: 0;
+        
+    }
+    
+    .firma1{
+        font-family: 'Moontime';
+        font-size: clamp(2.8125rem, 0.3125rem + 4.1667vw, 3.75rem);  
+        text-align: left;
+        font-weight: 600;
+        
+    }
+    
+    .cont{
+        
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 3vh;
+        height: auto;
+    }
+    
+    .contIndex{
+        
+        display: flex;
+        flex-direction:row;
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .contClase{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+    
+    }
+    .contCont{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+        gap: 0.5rem;
+    
+    }
+    
+    .tarj{
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.3rem;
+        padding: 2% ;
+        border: solid 0.3rem rgba(104, 95, 95, 0.349);
+        border-radius: 0.5rem;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,0.19931722689075626) 0%, rgba(250,237,232,0.022846638655462215) 100%);
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+        background-size:cover ;
+        box-shadow: 0px 0px 33px 14px rgba(237,154,154,0.28);
+    }
+    
+    .img1{
+        width: 35%;
+        height: auto;
+        
+    }
+    
+    .central{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        width: 30%;
+        padding-top: 0%;
+        gap: 3rem;
+        height: auto;
+       
+        
+    }
+    
+    .img2{
+        width: 80%;
+        margin:  0 auto;
+        
+    }
+    
+    .btn1{
+        text-align: center;
+        color: black;
+        width: fit-content;
+        font-weight: bold;
+        border-radius: 5%;
+        text-decoration: none;
+        margin: 0 auto;
+        font-family: 'Moontime';
+        font-size: clamp(3.5rem, 1.1667rem + 3.8889vw, 4.375rem);
+        padding: 5% 10%;
+        
+        border: solid 0.1rem brown;
+        
+    }
+    
+    .btn1:hover{
+        text-shadow: 0 0 10px rgba(253, 249, 249, 0.966), 0 0 5px rgba(255, 255, 255, 0.671);
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover ;
+    }
+    
+    .botonera{
+        width: 70%;
+        display: flex;
+        justify-content:space-evenly;
+        align-items:center;
+    }
+    
+    
+    .botoneraContacto{
+        width: 90%;
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        margin: 0 auto;
+    }
+    
+    .btn{
+        color: rgba(0,0,0);
+        /* background: #6e6e6e; */
+        width: fit-content;
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.5rem;
+        font-family: 'Garbata';
+        font-size: clamp(0.75rem, 0.0833rem + 1.1111vw, 1rem);
+        box-shadow:inset 0px 1px 0px 0px #dcecfb;
+        background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+        background-color:#bddbfa;
+        border:1px solid #84bbf3;
+        display:inline-block;
+        cursor:pointer;
+        font-weight:bold;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #528ecc;
+        margin: 0 auto;
+    }
+    
+    .btn:hover{
+        width: fit-content;
+        /* background: #6e6e6e; */
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.5rem;
+        font-family: 'Garbata';
+        font-size: clamp(0.875rem, -2.1111rem + 2.2222vw, 5rem);
+        box-shadow:inset -1px 0px 19px 2px #dcecfb;
+        background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+        background-color:#bddbfa;
+        border-radius:6px;
+        border:1px solid #84bbf3;
+        display:inline-block;
+        cursor:pointer;
+        color:#5e4343dc;
+        font-weight:bold;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #528ecc;
+    }
+    
+    /* SECCIONES  */
+    
+    .leftCont{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    
+    }
+    .cen{
+        justify-content: center;
+        }
+    
+    .even{
+        justify-content: space-evenly;
+    }
+    
+    .rightCont{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover ;
+    padding: 2%;
+    
+    }
+    
+    .rightCont.sobreMi{
+        align-items:center;
+        background: linear-gradient(90deg,  rgba(250,237,232,0.022846638655462215)  0%, rgba(126, 125, 125, 0.199) 100%);
+        padding: 2%;
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+        background-size:cover;
+        height: auto;
+    }
+    
+    .rightCont.contact{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        
+        }
+    .leftCont.sobreMi{
+        justify-content: space-around;
+        gap: 1rem;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,0.19931722689075626) 0%, rgba(250,237,232,0.022846638655462215) 100%);
+        padding: 2rem;
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+        background-size:cover;
+        height: auto;
+        }
+        .leftCont.songs{
+            justify-content:center;
+            background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,0.19931722689075626) 0%, rgba(250,237,232,0.022846638655462215) 100%);
+            padding: 2rem;
+            background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover ;
+            }
+    
+    .leftCont.clase{
+        padding: 1% 0 ;
+    }        
+
+    .leftCont.contact{
+        height: 100%;
+        }
+    
+    
+    .ap{
+        animation-name: aparicion;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+        background: rgb(0,0,0);
+    background: linear-gradient(90deg,  rgba(250,237,232,0.022846638655462215)  100%,rgba(0,0,0,0.19931722689075626) 0%);
+        border-radius: 1rem;
+        
+    }
+    
+    .imgCoro{
+        width: auto;
+        margin: 0 auto;
+        animation-name: aparicion;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+    }
+    
+    .title{
+        text-align: center;
+        font-family: 'Garbata';
+        font-size: clamp(1.5625rem, 0.3958rem + 1.9444vw, 2rem);
+        font-weight: bolder;
+        width: 100%;
+    
+    }
+    .titleContacto{
+        text-align: center;
+        font-family: 'Garbata';
+        font-size: clamp(1.5625rem, 0.3958rem + 1.9444vw, 2rem);
+        font-weight: bolder;
+        width: 100%;
+        padding: 1rem;
+    }
+    .subtitle{
+        text-align: center;
+        font-family: 'Garbata';
+        font-size: clamp(1.25rem, 0.5833rem + 1.1111vw, 1.5rem);
+        font-weight: bolder;
+        width: 100%;
+    
+    }
+    
+    .text{
+        font-size: clamp(0.625rem, 0.2917rem + 0.5556vw, 0.75rem);
+        font-family: 'Garbata';
+        font-weight: 900;
+        letter-spacing: 0.1rem;
+        width: 100%;
+        text-align: left;
+        line-height: 120%;
+        
+        
+    }
+    
+    .text1{
+        font-size: clamp(0.625rem, -0.375rem + 1.6667vw, 1rem);
+        font-family: 'Lato';
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        width: 100%;
+        text-align: center;
+        padding: 3%;
+    }
+    
+    .text1.song{
+        font-size: clamp(0.875rem, 0.2083rem + 1.1111vw, 1.125rem);
+        background-color: #c1ecdbbb;
+        width: fit-content;
+        margin: 2% auto;
+        border-radius: 5%;
+        padding: 2%;
+    }
+    
+    h1.textTarj{
+        font-size: clamp(1rem, -0.1486rem + 1.4136vw, 4.375rem);
+        font-family: 'Lato';
+        letter-spacing: 0.1rem;
+        width: 100%;
+        text-align: center;
+        padding: 2%;
+    }
+
+    .title.song{
+        background-color: #c1ecdbbb;
+        margin: 0 auto;
+        width: fit-content;
+        border-radius: 5%;
+        padding: 3% 2% 1% 1%;
+    }
+    .title.songs{
+        background-color: #c1ecdbbb;
+        margin: 0 auto;
+        width: fit-content;
+        border-radius: 5%;
+        padding: 2% 1% 1%;
+    }
+    
+    .img4{
+        width: 80%;
+        animation-name: aparicion;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        border-radius: 3%;
+        
+        
+    }
+    
+    .img5{
+        width: 80%;
+        animation-name: aparicion;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        border-radius: 3%;
+        
+    }
+    .img6{
+        display: none;
+    }
+
+    .imgContacto{
+        width: 70%;
+        animation-name: aparicion;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        margin: 0 auto;
+    }
+    
+    .contSong{
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    .half{
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+    }
+    .v-line{
+        border-left:dashed thick  #000000a2;
+        
+       }
+    
+    .estilos{
+        font-family: 'Lato';
+        font-size: clamp(0.75rem, 0.0833rem + 1.1111vw, 1rem);
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        
+    }
+    
+    .estilos:hover{
+        background-color: #c1ecdbbb;
+    }
+    
+    .estilos.canc{
+        font-family: 'Lato';
+        font-style: italic;
+        font-weight: 600;
+        font-size: clamp(0.875rem, 0.2083rem + 1.1111vw, 1.125rem);
+        padding: 0.5rem;
+    }
+    .estilos.canc:hover{
+        background-color: rgba(193, 236, 219, 0.733);
+    }
+    
+    .clase{
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgb(255, 255, 255) 0%,  rgba(243, 187, 187, 0.397) 0%);
+    border-radius: 1rem;
+    border: solid 0.3rem rgba(104, 95, 95, 0.349);
+        width: 45%;
+        justify-content: space-between;
+        gap:1rem;
+        padding: 3% 0;
+        height: auto;
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover ;
+    
+    }
+    .rightCont.clase{
+        background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(243, 187, 187, 0.397) 100%, rgb(255, 255, 255) 0%);
+    background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover ;
+    }
+    
+    .icon{
+        width: 100%;
+        height: 60px;
+    }
+    
+    .cont2{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .video{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        justify-content: start;
+        background-color: #ba9f98;
+        height: 80vh;
+        width: 80%;
+        left:10%;
+        top: 10%;
+        padding: 0 1% 3%;
+        animation-name: aparicion;
+        animation-duration: 1s;
+        animation-delay: 0s;
+    }
+    .videoA{
+        width: 5%;
+    }
+    .close{
+        width: 100%;
+        
+    }
+    
+    .bn54 {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: fit-content;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 0.1rem solid rgba(0, 0, 0, 0.6);
+    background-image: url(assets/imagenes/stacked-peaks-haikei_3.png);
+    background-size:cover;
+    transition: 0.5s;
+    font-family: 'Lato';
+    font-size: clamp(1rem, 0.1372rem + 1vw, 8.5rem);
+    padding: 1% 2%;
+      } 
+
+      .bn54Cont{
+        position: relative;
+        outline: none;
+        text-decoration: none;
+        border-radius: 50%;
+        border: 0.1rem solid rgba(255, 191, 119, 0.425);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        width: fit-content;
+        opacity: 1;
+        transition: 0.5s;
+        font-family: 'Lato';
+        font-size: clamp(1rem, 0.1372rem + 1vw, 8.5rem);
+        padding: 1% 2%;
+      }
+
+      .bn54 .bn54span {
+        color: #000000;
+        font-weight: 500;
+        letter-spacing: 0.7px;
+      }
+      
+      .bn54:hover {
+        animation: bn54rotate 0.7s ease-in-out both;
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+        background-size:cover ;
+        
+      }
+      .bn54Cont:hover {
+        animation: bn54rotateCont 0.7s ease-in-out both;
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+        background-size:cover ;
+        border-radius: 0;
+        border: 0.1rem solid rgba(0, 0, 0, 0.445);
+      }
+      
+      .bn54:hover .bn54span {
+        animation: bn54storm 0.7s ease-in-out both;
+        animation-delay: 0.06s;
+      }
+
+      .non{
+        display: none;
+      }
+      
+      @keyframes bn54rotate {
+        0% {
+          transform: rotate(0deg) translate3d(0, 0, 0);
+        }
+        25% {
+          transform: rotate(3deg) translate3d(0, 0, 0);
+        }
+        50% {
+          transform: rotate(-3deg) translate3d(0, 0, 0);
+        }
+        75% {
+          transform: rotate(1deg) translate3d(0, 0, 0);
+        }
+        100% {
+          transform: rotate(0deg) translate3d(0, 0, 0);
+        }
+      }
+
+      
+      
+      @keyframes bn54storm {
+        0% {
+          transform: translate3d(0, 0, 0) translateZ(0);
+        }
+        25% {
+          transform: translate3d(4px, 0, 0) translateZ(0);
+        }
+        50% {
+          transform: translate3d(0px, 0, 0) translateZ(0);
+        }
+        75% {
+          transform: translate3d(0px, 0, 0) translateZ(0);
+        }
+        100% {
+          transform: translate3d(0, 0, 0) translateZ(0);
+        }
+      }
+
+
+}
+
+@media handheld, screen and (min-width:470px) and (max-width: 960px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    @font-face {
+        font-family: 'Moontime';
+        src: url(assets/fuentes/FontsFree-Net-MoonTime-Regular-1.ttf);
+    }
+    
+    @font-face{
+    font-family: 'Garbata';
+        src: url(assets/fuentes/GarbataTrial-Regular.ttf);
+    }
+    @font-face{
+        font-family: 'Lato';
+            src: url(assets/fuentes/Lato-Heavy.ttf);
+        }
+    
+    header{    
+        text-align: center;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 2%;
+        margin: 0 auto;
+        background: rgb(250,237,232);
+    background: linear-gradient(90deg, rgba(250, 237, 232, 0.219) 0%, rgba(172, 169, 169, 0.137) 47%, rgba(248, 243, 241, 0.144) 100%);
+    
+    }
+    
+    body{
+        margin: 0 auto;
+        background: rgb(250,237,232);
+    background: linear-gradient(90deg, rgba(173, 238, 212, 0.212) 0%, rgba(250, 237, 232, 0.808) 49%, rgba(219, 212, 212, 0.362) 100%);
+    background-color: rgba(158, 228, 200, 0.911);
+    max-height: 700px;
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+    ul{
+        text-align: center;
+    }
+    li{
+        list-style-type: none;
+    }
+    
+    p{
+        font-size: clamp(1rem, -0.1486rem + 1.4136vw, 4.375rem);
+    }
+    
+    .firma{
+        font-family: 'Moontime';
+        font-size: clamp(2.5rem, 1.301rem + 4.0816vw, 3.75rem);
+        font-weight: 600;
+        padding: 0.5rem;
+        
+    }
+    
+    .firma1{
+        font-family: 'Moontime';
+        font-size: clamp(1.5625rem, 0.6633rem + 3.0612vw, 2.5rem);
+        text-align: center;
+        font-weight: 600;
+        
+    }
+    
+    .cont{
+        
+        display: flex;
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 3vh;
+        height: auto;
+    }
+    
+    .contIndex{
+        
+        display: flex;
+        flex-direction:row;
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .contClase{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+    
+    }
+    .contCont{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: auto;
+        margin: 0 auto;
+        height: auto;
+        gap: 0.3rem;
+        max-height: 500px;
+    
+    }
+    
+    .tarj{
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.3rem;
+        padding: 2% ;
+        border: solid 0.3rem rgba(104, 95, 95, 0.349);
+        border-radius: 0.5rem;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,0.19931722689075626) 0%, rgba(250,237,232,0.022846638655462215) 100%);
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+        background-size:cover ;
+        box-shadow: 0px 0px 33px 14px rgba(237,154,154,0.28);
+    }
+    
+    .img1{
+        width: 35%;
+        height: auto;
+        
+    }
+    
+    .central{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        width: 30%;
+        padding-top: 0%;
+        gap: 1.5rem;
+        height: auto;
+       
+        
+    }
+    
+    .img2{
+        width: 80%;
+        margin:  0 auto;
+        
+    }
+    
+    .btn1{
+        text-align: center;
+        color: black;
+        width: fit-content;
+        font-weight: bold;
+        border-radius: 5%;
+        text-decoration: none;
+        margin: 0 auto;
+        font-family: 'Moontime';
+        font-size: clamp(1.875rem, 0.676rem + 4.0816vw, 3.125rem);
+        padding: 5% 10%;
+        
+        border: solid 0.1rem brown;
+        
+    }
+    
+    .btn1:hover{
+        text-shadow: 0 0 10px rgba(253, 249, 249, 0.966), 0 0 5px rgba(255, 255, 255, 0.671);
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover ;
+    }
+    
+    .botonera{
+        width: 70%;
+        display: flex;
+        justify-content:space-evenly;
+        align-items:center;
+    }
+    
+    
+    .botoneraContacto{
+        width: 90%;
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        margin: 0 auto;
+    }
+    
+    .btn{
+        color: rgba(0,0,0);
+        /* background: #6e6e6e; */
+        width: fit-content;
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.5rem;
+        font-family: 'Garbata';
+        font-size: clamp(0.75rem, 0.0833rem + 1.1111vw, 1rem);
+        box-shadow:inset 0px 1px 0px 0px #dcecfb;
+        background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+        background-color:#bddbfa;
+        border:1px solid #84bbf3;
+        display:inline-block;
+        cursor:pointer;
+        font-weight:bold;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #528ecc;
+        margin: 0 auto;
+    }
+    
+    .btn:hover{
+        width: fit-content;
+        /* background: #6e6e6e; */
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.5rem;
+        font-family: 'Garbata';
+        font-size: clamp(0.875rem, -2.1111rem + 2.2222vw, 5rem);
+        box-shadow:inset -1px 0px 19px 2px #dcecfb;
+        background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+        background-color:#bddbfa;
+        border-radius:6px;
+        border:1px solid #84bbf3;
+        display:inline-block;
+        cursor:pointer;
+        color:#5e4343dc;
+        font-weight:bold;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #528ecc;
+    }
+    
+    /* SECCIONES  */
+    
+    .leftCont{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    
+    }
+    .cen{
+        justify-content: center;
+        }
+    
+    .even{
+        justify-content: space-evenly;
+    }
+    
+    .rightCont{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover ;
+    padding: 2%;
+    
+    }
+    
+    .rightCont.sobreMi{
+        align-items:center;
+        background: linear-gradient(90deg,  rgba(250,237,232,0.022846638655462215)  0%, rgba(126, 125, 125, 0.199) 100%);
+        padding: 2%;
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+        background-size:cover;
+        height: auto;
+    }
+    
+    .rightCont.contact{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        
+        }
+        .rightCont.songs{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            padding: 1% 0;
+            margin-right: auto;
+            
+            }
+    .leftCont.sobreMi{
+        justify-content: space-around;
+        gap: 0.5rem;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,0.19931722689075626) 0%, rgba(250,237,232,0.022846638655462215) 100%);
+        padding: 0.5rem;
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+        background-size:cover;
+        height: auto;
+        }
+        .leftCont.songs{
+            width: 40%;
+            margin-left: auto;
+            justify-content:center;
+            background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,0.19931722689075626) 0%, rgba(250,237,232,0.022846638655462215) 100%);
+            padding: 1% 0;
+            background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover ;
+    height: auto;
+            }
+    .leftCont.contact{
+        height: 100%;
+        }
+    
+    
+    .ap{
+        animation-name: aparicion;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+        background: rgb(0,0,0);
+    background: linear-gradient(90deg,  rgba(250,237,232,0.022846638655462215)  100%,rgba(0,0,0,0.19931722689075626) 0%);
+        border-radius: 1rem;
+        
+    }
+    
+    .imgCoro{
+        width: 70%;
+        margin: 0 auto;
+        animation-name: aparicion;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+    }
+    
+    .title{
+        text-align: center;
+        font-family: 'Garbata';
+        font-size: clamp(1.125rem, 0.7054rem + 1.4286vw, 1.5625rem);
+        font-weight: bolder;
+        width: 100%;
+    
+    }
+    .titleContacto{
+        text-align: center;
+        font-family: 'Garbata';
+        font-size: clamp(0.875rem, 0.6352rem + 0.8163vw, 1.125rem);
+        font-weight: bolder;
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .subtitle{
+        text-align: center;
+        font-family: 'Garbata';
+        font-size: clamp(0.75rem, 0.2704rem + 1.6327vw, 1.25rem);
+        font-weight: bolder;
+        width: 100%;
+    
+    }
+    
+    .text{
+        font-size: clamp(0.5rem, 0.2602rem + 0.8163vw, 0.75rem);
+        font-family: 'Garbata';
+        font-weight: 900;
+        letter-spacing: 0.01rem;
+        width: 100%;
+        text-align: left;
+        line-height: 120%;
+        
+        
+    }
+    
+    .text1{
+        font-size: clamp(0.4rem, 0.2602rem + 0.8163vw, 0.75rem);
+        font-family: 'Lato';
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+        width: 100%;
+        text-align: center;
+        padding: 3%;
+    }
+    
+    .text1.song{
+        font-size: clamp(0.625rem, 0.3852rem + 0.8163vw, 0.875rem);
+        background-color: #c1ecdbbb;
+        width: fit-content;
+        margin: 2% auto;
+        border-radius: 5%;
+        padding: 2%;
+    }
+    .title.song{
+        background-color: #c1ecdbbb;
+        margin: 0 auto;
+        width: fit-content;
+        border-radius: 5%;
+        padding: 3% 2% 1% 1%;
+    }
+    .title.songs{
+        background-color: #c1ecdbbb;
+        margin: 0 auto;
+        width: fit-content;
+        border-radius: 5%;
+        padding: 2% 1% 1%;
+    }
+
+    .ti{
+        font-size: clamp(0.875rem, 0.6352rem + 0.8163vw, 1.125rem);
+        
+    }
+    
+    .textTarj{
+        font-size: clamp(0.75rem, 0.5102rem + 0.8163vw, 1rem);
+        font-family: 'Lato';
+        letter-spacing: 0.1rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    h1.textTarj{
+        font-size: clamp(0.625rem, 0.3852rem + 0.8163vw, 0.875rem);
+        font-family: 'Lato';
+        letter-spacing: 0.1rem;
+        width: 100%;
+        text-align: center;
+        padding: 1%;
+    }
+    
+    .img4{
+        width: 80%;
+        animation-name: aparicion;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        border-radius: 3%;
+        
+    }
+    
+    .img5{
+        width: 80%;
+        animation-name: aparicion;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        border-radius: 3%;
+        
+    }
+    .img6{
+        display: none;
+    }
+    
+    .imgContacto{
+        width: 70%;
+        animation-name: aparicion;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        margin: 0 auto;
+    }
+    
+    .contSong{
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    .half{
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+    }
+    .v-line{
+        border-left:dashed thick  #000000a2;
+        
+       }
+    
+    .estilos{
+        font-family: 'Lato';
+        font-size: clamp(0.5rem, 0.1403rem + 1.2245vw, 0.875rem);
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0.4rem;
+        border-radius: 0.5rem;
+        
+    }
+    
+    .estilos:hover{
+        background-color: #c1ecdbbb;
+    }
+    
+    .estilos.canc{
+        font-family: 'Lato';
+        font-style: italic;
+        font-weight: 600;
+        font-size: clamp(0.5rem, 0.1403rem + 1.2245vw, 0.875rem);
+        padding: 0.4rem;
+    }
+    .estilos.canc:hover{
+        background-color: rgba(193, 236, 219, 0.733);
+    }
+    
+    .clase{
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgb(255, 255, 255) 0%,  rgba(243, 187, 187, 0.397) 0%);
+    border-radius: 1rem;
+    border: solid 0.3rem rgba(104, 95, 95, 0.349);
+        width: 45%;
+        justify-content: space-between;
+        gap:1rem;
+        padding: 3% 0;
+        height: auto;
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover ;
+    
+    }
+    .rightCont.clase{
+        background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(243, 187, 187, 0.397) 100%, rgb(255, 255, 255) 0%);
+    background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover ;
+    padding: 2% ;
+    gap: 0.5rem;
+    }
+    
+    .icon{
+        width: 100%;
+        height: 10vh;
+    }
+    
+    .cont2{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .video{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        justify-content: start;
+        background-color: #ba9f98;
+        height: 80vh;
+        width: 80%;
+        left:10%;
+        top: 10%;
+        padding: 0 1% 3%;
+        animation-name: aparicion;
+        animation-duration: 1s;
+        animation-delay: 0s;
+    }
+    .videoA{
+        width: 5%;
+    }
+    .close{
+        width: 100%;
+        
+    }
+    
+    .bn54 {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: fit-content;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 0.1rem solid rgba(0, 0, 0, 0.6);
+    background-image: url(assets/imagenes/stacked-peaks-haikei_3.png);
+    background-size:cover;
+    transition: 0.5s;
+    font-family: 'Lato';
+    font-size: clamp(0.5rem, 0.1403rem + 1.2245vw, 0.875rem);
+    padding: 1% 2%;
+      } 
+
+      .bn54Cont{
+        position: relative;
+        outline: none;
+        text-decoration: none;
+        border-radius: 50%;
+        border: 0.1rem solid rgba(255, 191, 119, 0.425);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        width: fit-content;
+        opacity: 1;
+        transition: 0.5s;
+        font-family: 'Lato';
+        font-size: clamp(1rem, 0.1372rem + 1vw, 8.5rem);
+        padding: 1% 2%;
+      }
+      
+      .bn54 .bn54span {
+        color: #000000;
+        font-weight: 500;
+        letter-spacing: 0.7px;
+      }
+      
+      .bn54:hover {
+        animation: bn54rotate 0.7s ease-in-out both;
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+        background-size:cover ;
+        
+      }
+      .bn54Cont:hover {
+        animation: bn54rotateCont 0.7s ease-in-out both;
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+        background-size:cover ;
+        border-radius: 0;
+        border: 0.1rem solid rgba(0, 0, 0, 0.445);
+      }
+      
+      .bn54:hover .bn54span {
+        animation: bn54storm 0.7s ease-in-out both;
+        animation-delay: 0.06s;
+      }
+
+      .non{
+        display:none;
+      }
+      
+      @keyframes bn54rotate {
+        0% {
+          transform: rotate(0deg) translate3d(0, 0, 0);
+        }
+        25% {
+          transform: rotate(3deg) translate3d(0, 0, 0);
+        }
+        50% {
+          transform: rotate(-3deg) translate3d(0, 0, 0);
+        }
+        75% {
+          transform: rotate(1deg) translate3d(0, 0, 0);
+        }
+        100% {
+          transform: rotate(0deg) translate3d(0, 0, 0);
+        }
+      }
+      
+      @keyframes bn54storm {
+        0% {
+          transform: translate3d(0, 0, 0) translateZ(0);
+        }
+        25% {
+          transform: translate3d(4px, 0, 0) translateZ(0);
+        }
+        50% {
+          transform: translate3d(0px, 0, 0) translateZ(0);
+        }
+        75% {
+          transform: translate3d(0px, 0, 0) translateZ(0);
+        }
+        100% {
+          transform: translate3d(0, 0, 0) translateZ(0);
+        }
+      }
+
+
+}
+
+@media handheld, screen and (min-width:320px) and (max-width: 469px) {
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    @font-face {
+        font-family: 'Moontime';
+        src: url(assets/fuentes/FontsFree-Net-MoonTime-Regular-1.ttf);
+    }
+    
+    @font-face{
+    font-family: 'Garbata';
+        src: url(assets/fuentes/GarbataTrial-Regular.ttf);
+    }
+    @font-face{
+        font-family: 'Lato';
+            src: url(assets/fuentes/Lato-Heavy.ttf);
+        }
+    
+    header{    
+        text-align: center;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .head{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 25vh;
+        min-height: 110px;
+        gap: 0rem;
+        padding: 2%;
+        margin: 0 auto;
+        background: rgb(250,237,232);
+    background: linear-gradient(90deg, rgba(250, 237, 232, 0.219) 0%, rgba(172, 169, 169, 0.137) 47%, rgba(248, 243, 241, 0.144) 100%);
+    z-index: 1;
+    float: left;
+    }
+    
+    body.indexx{
+        margin: 0 auto;
+        background: rgb(250,237,232);
+    background: linear-gradient(90deg, rgba(173, 238, 212, 0.212) 0%, rgba(250, 237, 232, 0.808) 49%, rgba(219, 212, 212, 0.362) 100%);
+    background-color: rgba(158, 228, 200, 0.911);
+    max-height: 700px;
+    background-image: url(assets/imagenes/pic1.png);
+    background-size:cover;
+    background-repeat: space;
+    padding: 0;
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+    ul{
+        text-align: center;
+    }
+    li{
+        list-style-type: none;
+    }
+    
+    p{
+        font-size: clamp(1rem, -0.1486rem + 1.4136vw, 4.375rem);
+    }
+    
+    .firma{
+        font-family: 'Moontime';
+        font-size: clamp(2.8125rem, 2.1458rem + 3.3333vw, 3.125rem);
+        font-weight: 600;
+        padding: 0.5rem;
+        
+    }
+    
+    .firma1{
+        font-family: 'Moontime';
+        font-size: clamp(2.5rem, 1.8333rem + 3.3333vw, 2.8125rem);
+        text-align: center;
+        font-weight: 600;
+        
+    }
+    
+    .cont{
+        
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 0;
+        height: 75vh;
+        justify-content: space-between;
+    }
+    
+    .contIndex{
+        
+        display: flex;
+        flex-direction:row;
+        width: 100%;
+        margin: 0 auto;
+        height: 80vh;
+        justify-content: space-between;
+        align-items:end;
+    }
+    
+    .contClase{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1rem;
+        width: 100%;
+        margin: 0 auto;
+        height: 75vh;
+    
+    }
+    .contCont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        margin: 0 auto;
+        height: auto;
+        gap: 2rem;
+        max-height: 500px;
+    
+    }
+    
+    .tarj{
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.3rem;
+        padding: 2% ;
+        border: solid 0.3rem rgba(104, 95, 95, 0.349);
+        border-radius: 0.5rem;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,0.19931722689075626) 0%, rgba(250,237,232,0.022846638655462215) 100%);
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+        background-size:cover ;
+        box-shadow: 0px 0px 33px 14px rgba(237,154,154,0.28);
+    }
+    
+    .img1{
+        width: 35%;
+        height: auto;
+        display: none;
+        
+    }
+    
+    .central{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        width: 120%;
+        height:auto;
+        padding-top: 0%;
+        gap: 0;
+        height: auto;
+        margin: 0 auto;
+        background-color: #74c0a0ad;
+       
+       
+        
+    }
+    
+    .img2{
+        width: 80%;
+        margin:  0 auto;
+        display: none;
+        
+    }
+    
+    .btn1{
+        text-align: center;
+        color: rgb(218, 235, 225);
+        width: fit-content;
+        font-weight: bold;
+        border-radius: 5%;
+        text-decoration: none;
+        margin: 0 auto;
+        font-family: 'Moontime';
+        
+        padding: 2% 5%;
+        font-size: clamp(2.8125rem, 2.1458rem + 3.3333vw, 3.125rem);
+        border: none;
+        
+    }
+    
+    .btn1:hover{
+        text-shadow: 0 0 5px rgba(253, 249, 249, 0.966), 0 0 2px rgba(255, 255, 255, 0.671);
+        background-image: none;
+    background-size:none ;
+        
+    }
+    
+    .botonera{
+        width: 100%;
+        display: flex;
+        justify-content:space-evenly;
+        align-items:center;
+    }
+    
+    
+    .botoneraContacto{
+        width: 90%;
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        margin: 0 auto;
+    }
+    
+    .btn{
+        color: rgba(0,0,0);
+        /* background: #6e6e6e; */
+        width: fit-content;
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.5rem;
+        font-family: 'Garbata';
+        font-size: clamp(0.75rem, 0.0833rem + 1.1111vw, 1rem);
+        box-shadow:inset 0px 1px 0px 0px #dcecfb;
+        background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+        background-color:#bddbfa;
+        border:1px solid #84bbf3;
+        display:inline-block;
+        cursor:pointer;
+        font-weight:bold;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #528ecc;
+        margin: 0 auto;
+    }
+    
+    .btn:hover{
+        width: fit-content;
+        /* background: #6e6e6e; */
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.5rem;
+        font-family: 'Garbata';
+        font-size: clamp(0.875rem, -2.1111rem + 2.2222vw, 5rem);
+        box-shadow:inset -1px 0px 19px 2px #dcecfb;
+        background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+        background-color:#bddbfa;
+        border-radius:6px;
+        border:1px solid #84bbf3;
+        display:inline-block;
+        cursor:pointer;
+        color:#5e4343dc;
+        font-weight:bold;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #528ecc;
+    }
+    
+    /* SECCIONES  */
+    
+    .leftCont{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    
+    }
+    .cen{
+        justify-content: center;
+        }
+    
+    .even{
+        justify-content: space-evenly;
+    }
+    
+    .rightCont{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover ;
+    padding: 2%;
+    
+    }
+    
+    .rightCont.sobreMi{
+        align-items:center;
+        background: linear-gradient(90deg,  rgba(250,237,232,0.022846638655462215)  0%, rgba(126, 125, 125, 0.199) 100%);
+        padding: 2%;
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+        background-size:cover;
+        height: auto;
+        display: none;
+    }
+    
+    .rightCont.contact{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        
+        }
+        .rightCont.songs{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            padding: 1% 0;
+            margin-right: auto;
+            
+            }
+    .leftCont.sobreMi{
+        justify-content: space-around;
+        gap: 0.5rem;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,0.19931722689075626) 0%, rgba(250,237,232,0.022846638655462215) 100%);
+        padding: 0.5rem;
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+        background-size:cover;
+        height: auto;
+        width: 100%;
+        }
+        .leftCont.songs{
+            width: 45%;
+            margin-left: auto;
+            justify-content:center;
+            background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,0.19931722689075626) 0%, rgba(250,237,232,0.022846638655462215) 100%);
+            padding: 1% 0;
+            background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover ;
+    height: auto;
+            }
+    .leftCont.contact{
+        height: 100%;
+        }
+    
+    
+    .ap{
+        animation-name: aparicion;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+        background: rgb(0,0,0);
+    background: linear-gradient(90deg,  rgba(250,237,232,0.022846638655462215)  100%,rgba(0,0,0,0.19931722689075626) 0%);
+        border-radius: 1rem;
+        
+    }
+    
+    .imgCoro{
+        width: 70%;
+        margin: 0 auto;
+        animation-name: aparicion;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+    }
+    
+    .title{
+        text-align: center;
+        font-family: 'Garbata';
+        font-size: clamp(1.125rem, 0.7054rem + 1.4286vw, 1.5625rem);
+        font-weight: bolder;
+        width: 100%;
+    
+    }
+    .titleContacto{
+        text-align: center;
+        font-family: 'Garbata';
+        font-size: clamp(0.875rem, 0.6352rem + 0.8163vw, 1.125rem);
+        font-weight: bolder;
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .subtitle{
+        text-align: center;
+        font-family: 'Garbata';
+        font-size: clamp(0.75rem, 0.2704rem + 1.6327vw, 1.25rem);
+        font-weight: bolder;
+        width: 100%;
+    
+    }
+    
+    .text{
+        font-size: clamp(0.6rem, 0.2602rem + 0.8163vw, 0.75rem);
+        font-family: 'Garbata';
+        font-weight: 900;
+        letter-spacing: 0.01rem;
+        width: auto;
+        text-align: left;
+        line-height: 120%;
+        float: left;
+        display: block;
+        
+        
+    }
+    
+    .text1{
+        font-size: clamp(0.4rem, 0.2602rem + 0.8163vw, 0.75rem);
+        font-family: 'Lato';
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+        width: 100%;
+        text-align: center;
+        padding: 3%;
+    }
+    
+    .text1.song{
+        font-size: clamp(0.625rem, 0.3852rem + 0.8163vw, 0.875rem);
+        background-color: #c1ecdbbb;
+        width: fit-content;
+        margin: 2% auto;
+        border-radius: 5%;
+        padding: 2%;
+    }
+    .title.song{
+        background-color: #c1ecdbbb;
+        margin: 0 auto;
+        width: fit-content;
+        border-radius: 5%;
+        padding: 3% 2% 1% 1%;
+    }
+    .title.songs{
+        background-color: #c1ecdbbb;
+        margin: 0 auto;
+        width: fit-content;
+        border-radius: 5%;
+        padding: 2% 1% 1%;
+    }
+
+    .fuente{
+        font-size: clamp(0.8rem, 0.7054rem + 1.2vw, 1.3rem);
+        
+    }
+    .ti{
+        font-size: clamp(0.875rem, 0.6352rem + 0.8163vw, 1.125rem);
+        
+    }
+    
+    .textTarj{
+        font-size: clamp(0.625rem, 0.3583rem + 1.3333vw, 0.75rem);
+        font-family: 'Lato';
+        letter-spacing: 0.1rem;
+        width: 100%;
+        text-align: center;
+        font-weight: bolder;
+    }
+    
+    h1.textTarj{
+        font-size: clamp(0.625rem, 0.3583rem + 1.3333vw, 0.75rem);
+        font-family: 'Lato';
+        letter-spacing: 0.1rem;
+        width: 100%;
+        text-align: center;
+        padding: 1%;
+        font-weight: bolder;
+    }
+    
+    .img4{
+        width: 80%;
+        animation-name: aparicion;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        border-radius: 3%;
+        display: block;
+        
+    }
+    
+    .img5{
+        width: 80%;
+        animation-name: aparicion;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        border-radius: 3%;
+        display: none;
+    }
+    
+    .imgContacto{
+        width: 70%;
+        animation-name: aparicion;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        margin: 0 auto;
+    }
+    
+    .contSong{
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    .half{
+        display: flex;
+        justify-content: space-between;
+        height: 50vh;
+    }
+    .v-line{
+        border-left:dashed thick  #000000a2;
+        
+       }
+    
+    .estilos{
+        font-family: 'Lato';
+        font-size: clamp(0.5rem, 0.1403rem + 1.2245vw, 0.875rem);
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0.4rem;
+        border-radius: 0.5rem;
+        
+    }
+    
+    .estilos:hover{
+        background-color: #c1ecdbbb;
+    }
+    
+    .estilos.canc{
+        font-family: 'Lato';
+        font-style: italic;
+        font-weight: 600;
+        font-size: clamp(0.5rem, 0.1403rem + 1.2245vw, 0.875rem);
+        padding: 0.4rem;
+    }
+    .estilos.canc:hover{
+        background-color: rgba(193, 236, 219, 0.733);
+    }
+    
+    .clase{
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgb(255, 255, 255) 0%,  rgba(243, 187, 187, 0.397) 0%);
+    border-radius: 1rem;
+    border: solid 0.3rem rgba(104, 95, 95, 0.349);
+        width: 45%;
+        justify-content: space-between;
+        gap:1rem;
+        padding: 3% 0;
+        height: auto;
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover ;
+    
+    }
+    .rightCont.clase{
+        background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(243, 187, 187, 0.397) 100%, rgb(255, 255, 255) 0%);
+    background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+    background-size:cover ;
+    padding: 2% ;
+    gap: 0.2rem;
+    }
+    
+    .icon{
+        width: 100%;
+        height: 10vh;
+    }
+    
+    .cont2{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .video{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        justify-content: start;
+        background-color: #ba9f98;
+        height: 80vh;
+        width: 80%;
+        left:10%;
+        top: 10%;
+        padding: 0 1% 3%;
+        animation-name: aparicion;
+        animation-duration: 1s;
+        animation-delay: 0s;
+    }
+    .videoA{
+        width: 10%;
+    }
+    .close{
+        width: 100%;
+        
+    }
+    
+    .cel{
+        display: block;
+        float: left;
+        width: 50%;
+        margin: 0;
+        padding:0 2%;
+        padding-bottom: 1%;
+    }
+
+    .bn54 {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: fit-content;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 0.1rem solid rgba(0, 0, 0, 0.6);
+    background-image: url(assets/imagenes/stacked-peaks-haikei_3.png);
+    background-size:cover;
+    transition: 0.5s;
+    font-family: 'Lato';
+    font-size: clamp(0.625rem, -0.0417rem + 3.3333vw, 0.9375rem);
+    padding: 1% 2%;
+      } 
+
+      .bn54Cont{
+        position: relative;
+        outline: none;
+        text-decoration: none;
+        border-radius: 50%;
+        border: 0.1rem solid rgba(255, 191, 119, 0.425);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        width: fit-content;
+        opacity: 1;
+        transition: 0.5s;
+        font-family: 'Lato';
+        font-size: clamp(1rem, 0.1372rem + 1vw, 8.5rem);
+        padding: 1% 2%;
+      }
+      
+      .bn54 .bn54span {
+        color: #000000;
+        font-weight: 500;
+        letter-spacing: 0.7px;
+      }
+      
+      .bn54:hover {
+        animation: bn54rotate 0.7s ease-in-out both;
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+        background-size:cover ;
+        
+      }
+      .bn54Cont:hover {
+        animation: bn54rotateCont 0.7s ease-in-out both;
+        background-image: url(assets/imagenes/stacked-peaks-haikei_2.png);
+        background-size:cover ;
+        border-radius: 0;
+        border: 0.1rem solid rgba(0, 0, 0, 0.445);
+      }
+      
+      .bn54:hover .bn54span {
+        animation: bn54storm 0.7s ease-in-out both;
+        animation-delay: 0.06s;
+      }
+      
+      .non{
+        display: block;
+      }
+      
+      @keyframes bn54rotate {
+        0% {
+          transform: rotate(0deg) translate3d(0, 0, 0);
+        }
+        25% {
+          transform: rotate(3deg) translate3d(0, 0, 0);
+        }
+        50% {
+          transform: rotate(-3deg) translate3d(0, 0, 0);
+        }
+        75% {
+          transform: rotate(1deg) translate3d(0, 0, 0);
+        }
+        100% {
+          transform: rotate(0deg) translate3d(0, 0, 0);
+        }
+      }
+      
+      @keyframes bn54storm {
+        0% {
+          transform: translate3d(0, 0, 0) translateZ(0);
+        }
+        25% {
+          transform: translate3d(4px, 0, 0) translateZ(0);
+        }
+        50% {
+          transform: translate3d(0px, 0, 0) translateZ(0);
+        }
+        75% {
+          transform: translate3d(0px, 0, 0) translateZ(0);
+        }
+        100% {
+          transform: translate3d(0, 0, 0) translateZ(0);
+        }
+      }
+
+
+
+}
